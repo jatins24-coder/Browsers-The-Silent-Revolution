@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Browsers: The Silent Revolution</title>
+
+  <!-- SEO Meta -->
+  <meta name="description" content="Explore the shift from old browsers like Internet Explorer and Yahoo to modern platforms like Chrome and Google. Includes rendering engine evolution, market share animations, and interactive data.">
+  <meta name="keywords" content="browsers, chrome, edge, brave, yahoo, google, bing, market share, trident, blink, webkit, reddit, orkut">
+  <meta name="author" content="Web Evolution Insights">
+
+  <!-- Bootstrap & AOS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f4f8;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(90deg, #1e3c72, #2a5298);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    h2 {
+      color: #1e3c72;
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+    .hover-timeline .card {
+      transition: transform 0.4s ease, background 0.4s ease;
+    }
+    .hover-timeline .card:hover {
+      transform: scale(1.05);
+      background: #dceeff;
+    }
+    footer {
+      background: #1e3c72;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header data-aos="fade-down">
+  <h1>Browsers: The Silent Revolution</h1>
+  <p>From Legacy Platforms to Lightning-Fast Chromium</p>
+</header>
+
+<div class="container">
+  <!-- Section 1: Comparison Table -->
+  <section data-aos="fade-up">
+    <h2>1. Legacy vs Modern Browsers</h2>
+    <table class="table table-bordered table-striped">
+      <thead class="table-primary">
+        <tr>
+          <th>Feature</th>
+          <th>Legacy (IE, Netscape, Safari)</th>
+          <th>Modern (Chrome, Edge, Brave)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Rendering Engine</td><td>Trident / Gecko / WebKit</td><td>Blink (Chromium)</td></tr>
+        <tr><td>Speed</td><td>Low</td><td>High, V8 optimized</td></tr>
+        <tr><td>Security</td><td>Weak</td><td>Sandboxing, frequent updates</td></tr>
+        <tr><td>Developer Tools</td><td>Basic</td><td>Powerful DevTools</td></tr>
+        <tr><td>UI/UX</td><td>Outdated</td><td>Sleek, intuitive</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Section 2: Timeline with Hover Animation -->
+  <section data-aos="fade-up">
+    <h2>2. Timeline: Rendering Engine Evolution</h2>
+    <div class="row hover-timeline">
+      <div class="col-md-4 mb-3">
+        <div class="card p-3" data-aos="zoom-in"><strong>1997:</strong> IE introduces Trident</div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card p-3" data-aos="zoom-in"><strong>2003:</strong> Apple releases Safari with WebKit</div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card p-3" data-aos="zoom-in"><strong>2008:</strong> Chrome debuts using WebKit</div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card p-3" data-aos="zoom-in"><strong>2013:</strong> Blink engine forked from WebKit</div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card p-3" data-aos="zoom-in"><strong>2015:</strong> EdgeHTML engine launches</div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card p-3" data-aos="zoom-in"><strong>2019:</strong> Edge adopts Chromium (Blink)</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Replaced Platforms -->
+  <section data-aos="fade-up">
+    <h2>3. Replaced Platforms: The Great Shift</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <h5>Yahoo → Google</h5>
+        <ul>
+          <li>Dominated early 2000s</li>
+          <li>Lacked innovation in search algorithms</li>
+          <li>Google's AI search crushed competition</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h5>Ask.com → Bing</h5>
+        <ul>
+          <li>Ask Jeeves failed with scale</li>
+          <li>Bing integrated with Microsoft tools</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h5>Orkut → Facebook / Instagram</h5>
+        <ul>
+          <li>No mobile app support</li>
+          <li>Facebook offered dynamic social features</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h5>Reddit → Discord / YouTube</h5>
+        <ul>
+          <li>Forum-based, not video-centric</li>
+          <li>YouTube/Discord captured Gen Z audience</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Market Share Chart Placeholder -->
+  <section data-aos="fade-up">
+    <h2>4. Market Share Timeline (Chart)</h2>
+    <canvas id="marketChart"></canvas>
+  </section>
+
+  <!-- Section 5: Security and Speed Benchmarks -->
+  <section data-aos="fade-up">
+    <h2>5. Speed & Security Comparison</h2>
+    <ul>
+      <li><strong>Chrome:</strong> Fastest V8 engine, sandbox security</li>
+      <li><strong>Edge:</strong> Efficient memory usage, built-in defender</li>
+      <li><strong>Brave:</strong> Privacy by design, ad-block by default</li>
+    </ul>
+  </section>
+</div>
+
+<footer>
+  <p>Created using Bootstrap, AOS, Chart.js. SEO optimized. Designed with Figma inspiration. © 2025</p>
+</footer>
+
+<!-- Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<!-- AOS Animations -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+
+<script>
+  const ctx = document.getElementById('marketChart');
+  new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: ['2010', '2012', '2014', '2016', '2018', '2020', '2022', '2024'],
+      datasets: [
+        {
+          label: 'Internet Explorer',
+          data: [60, 45, 30, 15, 7, 3, 1, 0.5],
+          borderColor: 'red',
+          fill: false
+        },
+        {
+          label: 'Chrome',
+          data: [5, 15, 35, 50, 60, 65, 68, 70],
+          borderColor: 'green',
+          fill: false
+        },
+        {
+          label: 'Safari',
+          data: [10, 10, 12, 14, 16, 17, 18, 19],
+          borderColor: 'blue',
+          fill: false
+        },
+        {
+          label: 'Edge',
+          data: [0, 0, 3, 4, 6, 8, 10, 12],
+          borderColor: 'purple',
+          fill: false
+        },
+        {
+          label: 'Brave',
+          data: [0, 0, 0, 1, 2, 4, 5, 6],
+          borderColor: 'orange',
+          fill: false
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        title: {
+          display: true,
+          text: 'Browser Market Share (2010–2024)'
+        }
+      }
+    }
+  });
+</script>
+
+</body>
+</html>
